@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+     <WebSite productStoreId="9000" siteName="Fezert ecommerce website" webSiteId="FezertWebStore"/>
+
+    <Content contentId="FEZERT_PPOINT" contentTypeId="WEB_SITE_PUB_PT" contentName="FEZERT Site Publish Point" description=""/>
+    <WebSiteContent webSiteId="FezertWebStore" contentId="FEZERT_PPOINT" webSiteContentTypeId="PUBLISH_POINT" fromDate="2001-01-01 00:00:00"/>
+
+    <DataResource dataResourceId="FEZERT_HOME_PAGE" dataResourceTypeId="OFBIZ_FILE" dataTemplateTypeId="FTL" dataResourceName="FEZERT_HOME_PAGE" objectInfo="hot-deploy/fezert/webapp/fezert/includes/HomePage.ftl"/>
+    <Content contentId="FEZERT_HOME_PAGE" contentTypeId="DOCUMENT" contentName="Fezert Home Page" mimeTypeId="text/html" statusId="CTNT_PUBLISHED" dataResourceId="FEZERT_HOME_PAGE"/>
+
+    <ContentAssoc contentId="FEZERT_PPOINT" contentIdTo="FEZERT_HOME_PAGE" contentAssocTypeId="SUB_CONTENT" fromDate="2001-01-01 00:00:00"/>
+	
+	<WebSiteContent contentId="FEZERT_HOME_PAGE" fromDate="2001-01-01 00:00:00.0" webSiteContentTypeId="DEFAULT_PAGE" webSiteId="FezertWebStore"/>
+	<WebSitePathAlias webSiteId="FezertWebStore" contentId="FEZERT_HOME_PAGE" fromDate="2001-01-01 00:00:00" pathAlias="main"/>
+	
+    <DataResource dataResourceId="FEZERT_REGISTER_PAGE" dataResourceTypeId="OFBIZ_FILE" dataTemplateTypeId="FTL" dataResourceName="FEZERT_REGISTER_PAGE" objectInfo="hot-deploy/fezert/webapp/fezert/includes/Registration.ftl"/>
+    <Content contentId="FEZERT_REGISTER_PAGE" contentTypeId="DOCUMENT" contentName="Fezert Home Page" mimeTypeId="text/html" statusId="CTNT_PUBLISHED" dataResourceId="FEZERT_REGISTER_PAGE"/>
+	<ContentAssoc contentId="FEZERT_PPOINT" contentIdTo="FEZERT_REGISTER_PAGE" contentAssocTypeId="SUB_CONTENT" fromDate="2001-01-01 00:00:00"/>
+	
+	<WebSitePathAlias webSiteId="FezertWebStore" contentId="FEZERT_REGISTER_PAGE" fromDate="2001-01-01 00:00:00" pathAlias="register"/>
+
+    <DataResource dataResourceId="FEZERT_LOGIN_PAGE" dataResourceTypeId="OFBIZ_FILE" dataTemplateTypeId="FTL" dataResourceName="FEZERT LOGIN PAGE" objectInfo="hot-deploy/fezert/webapp/fezert/includes/Login.ftl"/>
+    <Content contentId="FEZERT_LOGIN_PAGE" contentTypeId="DOCUMENT" contentName="Fezert Login Page" mimeTypeId="text/html" statusId="CTNT_PUBLISHED" dataResourceId="FEZERT_LOGIN_PAGE"/>
+	<ContentAssoc contentId="FEZERT_PPOINT" contentIdTo="FEZERT_LOGIN_PAGE" contentAssocTypeId="SUB_CONTENT" fromDate="2001-01-01 00:00:00"/>
+	
+	<WebSitePathAlias webSiteId="FezertWebStore" contentId="FEZERT_LOGIN_PAGE" fromDate="2001-01-01 00:00:00" pathAlias="Login"/>
+
+    <DataResource dataResourceId="FEZERT_FB_LOGIN" dataResourceTypeId="OFBIZ_FILE" dataTemplateTypeId="FTL" dataResourceName="FEZERT_FB_LOGIN" objectInfo="hot-deploy/fezert/webapp/fezert/includes/FbLogin.ftl"/>
+    <Content contentId="FEZERT_FB_LOGIN" contentTypeId="DOCUMENT" contentName="Fezert Fb Login" mimeTypeId="text/html" statusId="CTNT_PUBLISHED" dataResourceId="FEZERT_FB_LOGIN"/>
+	<ContentAssoc contentId="FEZERT_PPOINT" contentIdTo="FEZERT_FB_LOGIN" contentAssocTypeId="SUB_CONTENT" fromDate="2001-01-01 00:00:00"/>
+	
+	<WebSitePathAlias webSiteId="FezertWebStore" contentId="FEZERT_FB_LOGIN" fromDate="2001-01-01 00:00:00" pathAlias="fb-login"/>
+	
+</entity-engine-xml>
